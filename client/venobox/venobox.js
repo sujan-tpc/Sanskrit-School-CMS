@@ -98,7 +98,7 @@
                         }else if (obj.data('type') == 'youtube'){
                           loadYoutube();
                         } else {
-                          content.html('<img src="../../venobox/'+dest+'">');
+                          content.html('<img src="'+dest+'">');
                           preloadFirst();
                         }
                       });
@@ -119,7 +119,7 @@
                         }else if (obj.data('type') == 'youtube'){
                           loadYoutube();
                         } else {
-                          content.html('<img src="../../venobox/'+dest+'">');
+                          content.html('<img src="'+dest+'">');
                           preloadFirst();
                         }
                       });
@@ -241,7 +241,7 @@
                           } else if (theprev.data('type') == 'vimeo'){
                             loadVimeo();
                           }else{
-                            content.html('<img src="../../venobox/'+dest+'">');
+                            content.html('<img src="'+dest+'">');
                             preloadFirst();
                           }
                           obj = theprev;
@@ -290,7 +290,7 @@
                           } else if (thenext.data('type') == 'vimeo'){
                             loadVimeo();
                           }else{
-                            content.html('<img src="../../venobox/'+dest+'">');
+                            content.html('<img src="'+dest+'">');
                             preloadFirst();
                           }
                           obj = thenext;
@@ -339,7 +339,7 @@
                         } else if (thenext.data('type') == 'vimeo'){
                           loadVimeo();
                         }else{
-                            content.html('<img src="../../venobox/'+dest+'">');
+                            content.html('<img src="'+dest+'">');
                             preloadFirst();
                         }
                         obj = thenext;
@@ -386,7 +386,7 @@
                         } else if (theprev.data('type') == 'vimeo'){
                           loadVimeo();
                         }else{
-                          content.html('<img src="../../venobox/'+dest+'">');
+                          content.html('<img src="'+dest+'">');
                           preloadFirst();
                         }
                           obj = theprev;
@@ -457,7 +457,7 @@
 
     /* -------- LOAD IFRAME -------- */
     function loadIframe(){
-      content.html('<iframe class="venoframe" src="../../venobox/'+dest+'"></iframe>');
+      content.html('<iframe class="venoframe" src="'+dest+'"></iframe>');
     //  $('.venoframe').load(function(){ // valid only for iFrames in same domain
       updateoverlay();
     //  });
